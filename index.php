@@ -1,9 +1,22 @@
 <?php
-define('test', 40);
-//echo test;
 
-$sum=test+30;
-echo $sum;
 
+//arithmatics
+$a=10;
+$b=4;
+
+//$c=$a%$b;
+
+$a++;
+++$a;
+echo $a . '<br>'; 
+/*========== Assignment operator=====
+x+=y -->x=x+y
+
++=,*=,
+*/
+
+$a/=$b;
+echo $a;
 
 ?>
