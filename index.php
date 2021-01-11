@@ -1,12 +1,11 @@
 <?php
 
-
-$a=1;
-
-do{
-    echo $a . ") yahoo baba" . "<br>";
-    $a++;
-}while($a<=10)
+for($a = 1; $a<=100; $a=$a+10){
+   for($b=$a; $b < $a+10; $b++){
+       echo $b . " ";
+   }
+    echo "<br>";
+}
     
     
 ?>
