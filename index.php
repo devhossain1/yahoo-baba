@@ -1,24 +1,17 @@
 <?php
 
-for($a=1; $a<=10;$a++){
-    if($a==4){
-        echo "No. " . $a . " <br>";
-        continue;
-    }
-    
-    
-    echo "number " . $a . "<br>";
+function hello($fname="First",$lname="Last"){
+    echo "Hello $fname $lname <br>";
+     
 }
+function sum($a,$b){
+    echo $a+$b;
+}
+hello("yahoo baba", "Aray");
+hello();
 
-echo "Hello yahoo baba<br>";
-echo "Hello yahoo baba<br>";
-goto abc;
-echo "Hello yahoo baba<br>";
-echo "Hello yahoo baba<br>";
-echo "Hello yahoo baba<br>";
-echo "Hello yahoo baba<br>";
-
-abc:
-echo "Hey is the label abc";
+$one=20.34;
+$two=20;
+sum($one,$two);
 
 ?>
