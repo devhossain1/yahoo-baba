@@ -1,17 +1,20 @@
 <?php
 
-function hello($fname="First",$lname="Last"){
-    echo "Hello $fname $lname <br>";
+function sum($math, $eng, $sci){
+    $s= $math+$eng+$sci;
+    
+    return $s;
      
 }
-function sum($a,$b){
-    echo $a+$b;
+function percentage($st){
+  $per = $st / 3; 
+    
+  echo $per . "%";
 }
-hello("yahoo baba", "Aray");
-hello();
 
-$one=20.34;
-$two=20;
-sum($one,$two);
+$total=sum(34,50,100);
+percentage($total);
+ 
+
 
 ?>
