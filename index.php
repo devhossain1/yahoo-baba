@@ -1,14 +1,10 @@
 <?php
 
-$x = 10;
-$y = 5;
-function test(){
-    global $x, $y;
-    $x=$x * $y;
-     
-}
-
-test();
-echo $x;
+$colors=["red",20,"blue", "black"];
+echo "<ol>";
+ for($i=0;$i < 4; $i++){
+     echo "<li> $colors[$i] <br>";
+ }
+ echo "</ol>"; 
 
 ?>
