@@ -1,20 +1,14 @@
 <?php
 
-$sayHello = function($name){
-    echo "Hello $name <br>";
-};
-
-$sayHello("yahoo baba");
-
-//recursive function
-
-function factorial($n){
-    if($n == 0){
-      return 1;
-    }else{
-      return ($n * factorial($n-1));   
-    }
+$x = 10;
+$y = 5;
+function test(){
+    global $x, $y;
+    $x=$x * $y;
+     
 }
-echo factorial(7);
+
+test();
+echo $x;
 
 ?>
