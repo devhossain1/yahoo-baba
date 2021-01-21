@@ -1,17 +1,14 @@
 <?php
 
 $age = [
-    100 => 25,
-    "bill" =>28.5,
-    32 =>22
+    "bill" =>25,
+    "steve " =>28,
+    "elon" =>20,
 ];
-
-echo "<pre>";
-var_dump($age);
-echo "</pre>";
-
-echo $age[100] . "<br>";
-echo $age["bill"] . "<br>";
-echo $age[32] . "<br>";
+echo "<ul>";
+foreach($age as $key => $value){
+    echo  "<li>$key = $value </li>";
+}
+echo "</ul>";
 
 ?>
